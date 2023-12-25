@@ -1,65 +1,73 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #161616;
-    color: #c5a880;
-    font-family: sans-serif;
-  }
-  
-  label {
-    display: inline-block;
-    background-color: #161616;
-    padding: 16px;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    width: 300px;
-    border-radius: 10px;
-    border: 1px solid #c5a880;
-    text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .btn {
-    background-color: #161616;
-    border-radius: 10px;
-    color: #c5a880;
-    border: 1px solid #c5a880;
-    padding: 16px;
-    width: 300px;
-    margin-bottom: 16px;
-    line-height: 1.5;
-    cursor: pointer;
-  }
-  .separator {
-    font-weight: bold;
-    text-align: center;
-    width: 300px;
-    margin: 16px 0px;
-    color: #a07676;
-  }
-  
-  .title {
-    color: #a07676;
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 16px;
-  }
-  
-  .text-loading {
-    font-size: 2rem;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #362c2c; /* 明るいグレーの背景色 */
+  color: #333; /* ダークグレーのテキスト色 */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* モダンなフォント */
+}
+
+label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px; /* シンプルなラウンドボーダー */
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 300px;
+  border: 1px solid #ddd; /* ソフトなグレーのボーダー */
+  text-align: center;
+  transition: all 0.3s ease; /* スムーズなホバーエフェクト */
+}
+
+label:hover {
+  background-color: #f5f5f5; /* ホバー時の背景変更 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* ホバー時の影を加える */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 300px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.separator {
+  font-weight: bold;
+  text-align: center;
+  width: 300px;
+  margin: 16px 0px;
+  color: #1b1919; /* 暗めのグレー */
+}
+
+.title {
+  color: #c3c3c3;
+  font-weight: bold;
+  font-size: 1.75rem; /* サイズをやや大きく */
+  margin-bottom: 16px;
+}
+
+.text-loading {
+  font-size: 2rem;
+}
